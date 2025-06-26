@@ -1,49 +1,63 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./src/output.css">
-    <script src="src/js/main.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Savor</title>
+  <link rel="stylesheet" href="./src/output.css" />
+  <script src="src/js/main.js" defer></script>
 </head>
 
 <body class="font-body bg-gray-500">
-    <!-- Header & Navigation -->
-    <header class="fixed top-0 w-full">
-        <nav class="container mx-auto px-6 py-4">
-            <div class="flex items-center justify-between">
-                <!-- Navigation Links -->
-                <div class="flex-1 hidden md:flex items-center space-x-8">
-                    <!-- Menu Dropdown -->
-                    <div class="relative group">
-                        <button class="nav-link flex items-center">
-                            Menu <span class="ml-1 text-black">▼</span>
-                        </button>
-                        <div class="bg-white absolute top-full left-0 mt-2 w-48">
-                            <a href="#breakfast" class="block px-4 py-3">Breakfast</a>
-                            <a href="#main-dishes" class="block px-4 py-3">Main Dishes</a>
-                            <a href="#desserts" class="block px-4 py-3">Desserts</a>
-                            <a href="#drinks" class="block px-4 py-3">Drinks</a>
-                        </div>
-                    </div>
-                    <a href="#story" class="nav-link">Our Story</a>
-                    <a href="#feedback" class="nav-link">Feedback</a>
-                </div>
-
-                <!-- Restaurant Name -->
-                <div class="flex-1 text-center">
-                    <h1 class="text-2xl font-display font-bold">SAVOR</h1>
-                </div>
-
-                <!-- Dark Mode Toggle -->
-                <div class="flex flex-1 justify-end">
-                    <button id="themeToggle">Theme</button>
-                </div>
+  <!-- Header & Navigation -->
+  <header class="fixed top-0 w-full">
+    <nav class="container mx-auto px-6 py-4">
+      <div class="flex items-center justify-between">
+        <!-- Navigation Links -->
+        <div class="flex-1 hidden md:flex items-center space-x-8">
+          <!-- Menu Dropdown -->
+          <div class="relative group">
+            <button class="nav-link flex items-center">
+              Menu <span class="ml-1 text-black">▼</span>
+            </button>
+            <div class="bg-white absolute top-full left-0 mt-2 w-48">
+              <a href="#breakfast" class="block px-4 py-3">Breakfast</a>
+              <a href="#main-dishes" class="block px-4 py-3">Main Dishes</a>
+              <a href="#desserts" class="block px-4 py-3">Desserts</a>
+              <a href="#drinks" class="block px-4 py-3">Drinks</a>
             </div>
-        </nav>
-    </header>
+          </div>
+          <a href="#story" class="nav-link">Our Story</a>
+          <a href="#feedback" class="nav-link">Feedback</a>
+        </div>
+
+        <!-- Restaurant Name -->
+        <div class="flex-1 text-center">
+          <h1 class="text-2xl font-display font-bold">SAVOR</h1>
+        </div>
+
+        <!-- Dark Mode Toggle -->
+        <div class="flex flex-1 justify-end">
+          <button id="themeToggle">Theme</button>
+          <!-- Mobile Menu Button -->
+          <button id="mobileMenuBtn" class="md:hidden p-2">
+            <div class="w-6 h-6 flex flex-col justify-center space-y-1">
+              <div class="w-full h-0.5 bg-current"></div>
+              <div class="w-full h-0.5 bg-current"></div>
+              <div class="w-full h-0.5 bg-current"></div>
+            </div>
+          </button>
+        </div>
+      </div>
+      <!-- Mobile Menu -->
+            <div id="mobileMenu" class="md:hidden hidden mt-4 pb-4">
+                <a href="#menu" class="block py-2">menu</a>
+                <a href="#story" class="block py-2">Our Story</a>
+                <a href="#feedback" class="block py-2">Feedback</a>
+            </div>
+    </nav>
+  </header>
 </body>
 
 </html>
