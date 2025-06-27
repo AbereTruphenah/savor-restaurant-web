@@ -15,28 +15,48 @@
 <body class="bg-gray-900 text-white font-sans">
   <header class="bg-[#CFD2C6] text-white py-4 px-6 flex justify-between items-center fixed top-0 left-0 w-full z-50
   shadow-lg">
-  <nav class="relative space-x-4 text-sm group text-black">
-    <div class="inline-block relative">
-      <button class="hover:text-yellow-400 flex items-center gap-1">Menu
-        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-black" viewBox="0 0 20 20" fill="currentColor">
-          <path fill-rule="evenodd"
-            d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.25a.75.75 0 01-1.06 0L5.23 8.27a.75.75 0 01.02-1.06z"
-            clip-rule="evenodd" />
-        </svg>
-      </button>
-      <div class="absolute left-0 mt-2 w-40 bg-white text-black rounded shadow-lg hidden group-hover:block">
-        <a href="#breakfast" class="block px-4 py-2 hover:bg-gray-200">Breakfast</a>
-        <a href="#main-dishes" class="block px-4 py-2 hover:bg-gray-200">Main Dishes</a>
-        <a href="#desserts" class="block px-4 py-2 hover:bg-gray-200">Desserts</a>
-        <a href="#drinks" class="block px-4 py-2 hover:bg-gray-200">Drinks</a>
+    <nav class="relative space-x-4 text-sm group text-black">
+      <div class="inline-block relative">
+        <button class="hover:text-yellow-400 flex items-center gap-1">Menu
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-black" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd"
+              d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.25a.75.75 0 01-1.06 0L5.23 8.27a.75.75 0 01.02-1.06z"
+              clip-rule="evenodd" />
+          </svg>
+        </button>
+        <div class="absolute left-0 mt-2 w-40 bg-white text-black rounded shadow-lg hidden group-hover:block">
+          <a href="#breakfast" class="block px-4 py-2 hover:bg-gray-200">Breakfast</a>
+          <a href="#main-dishes" class="block px-4 py-2 hover:bg-gray-200">Main Dishes</a>
+          <a href="#desserts" class="block px-4 py-2 hover:bg-gray-200">Desserts</a>
+          <a href="#drinks" class="block px-4 py-2 hover:bg-gray-200">Drinks</a>
+        </div>
       </div>
-    </div>
-    <a href="#" class="hover:text-yellow-400">Our Story</a>
-    <a href="#" class="hover:text-yellow-400">Feedback</a>
-  </nav>
-  <div class="text-xl font-bold tracking-wide" style="color: #6B4849C7">SAVOR</div>
-  <div class="text-sm">Theme</div>
+      <a href="#" class="hover:text-yellow-400">Our Story</a>
+      <a href="#" class="hover:text-yellow-400">Feedback</a>
+    </nav>
+    <div class="text-xl font-bold tracking-wide" style="color: #6B4849C7">SAVOR</div>
+    <div class="text-sm">Theme</div>
   </header>
+
+  <!-- Spacer to offset fixed header -->
+  <div class="h-16"></div>
+  <main>
+
+    <!-- Hero Section -->
+    <section class="relative bg-cover bg-center h-[400px]" style="background-image: url('Assets/show2.jpg');">
+      <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col items-start justify-end px-10 pb-10">
+        <button
+          class="bg-red-600 text-white px-6 py-3 rounded-full font-semibold text-2xl mb-2 hover:bg-red-700 transition font-[Lobster]"
+          style="font-family: 'Lobster', cursive;">Eat Now</button>
+        <h1 class="text-5xl font-bold text-white">at SAVOR</h1>
+      </div>
+      <div class="absolute bottom-4 w-full flex justify-center space-x-2">
+        <div class="w-2 h-2 bg-white rounded-full"></div>
+        <div class="w-2 h-2 bg-gray-500 rounded-full"></div>
+        <div class="w-2 h-2 bg-gray-500 rounded-full"></div>
+      </div>
+    </section>
+  </main>
 </body>
 
 </html>
