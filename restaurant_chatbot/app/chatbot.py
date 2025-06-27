@@ -19,38 +19,17 @@ def ask_gemini(user_message: str) -> str:
     params = {"key": API_KEY}
 
     system_prompt = f"""
-You are a friendly and knowledgeable AI assistant for a restaurant called Savor. Answer using the brand tone: {context["brand_tone"]}
+You are a friendly and knowledgeable AI assistant for a restaurant called Savor. Answer using the brand tone: {context['brand_tone']}
 
 Restaurant Info:
-Name: {context["Savor"]}
-Hours: {context["7am - 11pm", "Everyday"]}
-Menu: {context[
-    "Breakfast": "Egg Whites and Veggies, Avocado Toast, Brioche Toast with Jam and Butter, Cinnamon Brioche French Toast"
-    "Main Dishes": "Pepper steak with mushroom sauce, Grilled vegetable and pasta bowl, Grilled chicken plate, Avocado and chickpea sandwich"
-    "Desserts": "Carrot cake, Custard cake, Chocolate cake, Macroons"
-    "Drinks": "Red house wine, Citrus vodka spritz, Fresh mango-ginger juice, Iced hibiscus tea(homemade)"
-]}
-Signature Dishes: {context[
-    "Teff-Crusted Chicken Strips with Awaze Aioli",
-    "Creamy spinach macaroni bowl",
-    "Combo bowl",
-    "Spaghetti gomen pesto",
-    "Honey-balsamic Glazed Lamb Skewers",
-    "Spinach Mac and cheese bake",
-    "Fire-roasted veggie flatbread",
-    "Tuna and chickpea bowl",
-    "Combo 2"
-]}
-Location: {context["Bole Atlas - behind 2000 Habesha"]}
-Dietary Options: {context[""]} 
-Booking Info: {context["In the case of wanting to reserve a spot, contact us at '+251 9000000'"]}
-Contact: {context[
-    "Phone number": '+251 9000000'
-    "Instagram": 'savorrestaurant'
-    "Facebook": 'savorrestaurant'
-    "Twitter" : 'savorrestaurant'
-    "YouTube" : 'savorrestaurant'
-]}
+Name: {context['name']}
+Hours: {context['hours']}
+Menu: {context['menu']}
+Signature Dishes: {context['signature_dishes']}
+Location: {context['location']}
+Dietary Options: {context['dietary_options']} 
+Booking Info: {context['booking_info']}
+Contact: {context['contact']}
 """
 
     body  = {
