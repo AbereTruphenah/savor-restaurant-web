@@ -1,62 +1,41 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Savor</title>
-  <link rel="stylesheet" href="./src/output.css" />
-  <script src="src/js/main.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-1zcA+Z02PvPbDjS2LApQwr5osGeLqE0P1Em/2pD2X+LgnBvDToH1cV2xAt64ldl/fBybYX3L0qZ2Xy8ZwKBB9A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="font-body bg-gray-500">
-  <!-- Header & Navigation -->
-  <header class="fixed top-0 w-full">
-    <nav class="container mx-auto px-6 py-4">
-      <div class="flex items-center justify-between">
-        <!-- Navigation Links -->
-        <div class="flex-1 hidden md:flex items-center space-x-8">
-          <!-- Menu Dropdown -->
-          <div class="relative group">
-            <button class="nav-link flex items-center">
-              Menu <span class="ml-1 text-black">▼</span>
-            </button>
-            <div class="bg-white absolute top-full left-0 mt-2 w-48">
-              <a href="#breakfast" class="block px-4 py-3">Breakfast</a>
-              <a href="#main-dishes" class="block px-4 py-3">Main Dishes</a>
-              <a href="#desserts" class="block px-4 py-3">Desserts</a>
-              <a href="#drinks" class="block px-4 py-3">Drinks</a>
-            </div>
-          </div>
-          <a href="#story" class="nav-link">Our Story</a>
-          <a href="#feedback" class="nav-link">Feedback</a>
-        </div>
-
-        <!-- Restaurant Name -->
-        <div class="flex-1 text-center">
-          <h1 class="text-2xl font-display font-bold">SAVOR</h1>
-        </div>
-
-        <!-- Dark Mode Toggle -->
-        <div class="flex flex-1 justify-end">
-          <button id="themeToggle">Theme</button>
-          <!-- Mobile Menu Button -->
-          <button id="mobileMenuBtn" class="md:hidden p-2">
-            <div class="w-6 h-6 flex flex-col justify-center space-y-1">
-              <div class="w-full h-0.5 bg-current"></div>
-              <div class="w-full h-0.5 bg-current"></div>
-              <div class="w-full h-0.5 bg-current"></div>
-            </div>
-          </button>
-        </div>
+<body class="bg-gray-900 text-white font-sans">
+  <header class="bg-[#CFD2C6] text-white py-4 px-6 flex justify-between items-center fixed top-0 left-0 w-full z-50
+  shadow-lg">
+  <nav class="relative space-x-4 text-sm group text-black">
+    <div class="inline-block relative">
+      <button class="hover:text-yellow-400 flex items-center gap-1">Menu
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-black" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd"
+            d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.25a.75.75 0 01-1.06 0L5.23 8.27a.75.75 0 01.02-1.06z"
+            clip-rule="evenodd" />
+        </svg>
+      </button>
+      <div class="absolute left-0 mt-2 w-40 bg-white text-black rounded shadow-lg hidden group-hover:block">
+        <a href="#breakfast" class="block px-4 py-2 hover:bg-gray-200">Breakfast</a>
+        <a href="#main-dishes" class="block px-4 py-2 hover:bg-gray-200">Main Dishes</a>
+        <a href="#desserts" class="block px-4 py-2 hover:bg-gray-200">Desserts</a>
+        <a href="#drinks" class="block px-4 py-2 hover:bg-gray-200">Drinks</a>
       </div>
-      <!-- Mobile Menu -->
-            <div id="mobileMenu" class="md:hidden hidden mt-4 pb-4">
-                <a href="#menu" class="block py-2">menu</a>
-                <a href="#story" class="block py-2">Our Story</a>
-                <a href="#feedback" class="block py-2">Feedback</a>
-            </div>
-    </nav>
+    </div>
+    <a href="#" class="hover:text-yellow-400">Our Story</a>
+    <a href="#" class="hover:text-yellow-400">Feedback</a>
+  </nav>
+  <div class="text-xl font-bold tracking-wide" style="color: #6B4849C7">SAVOR</div>
+  <div class="text-sm">Theme</div>
   </header>
 </body>
 
