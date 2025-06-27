@@ -18,6 +18,11 @@ app.add_middleware(
 class ChatRequest(BaseModel):
     message: str
 
+@app.get("/")
+async def root():
+    return {"message": "Savor Chatbot backend is running!"}
+
+
 
 @app.post("/chat")
 async def chat_endpoint(req: ChatRequest):
