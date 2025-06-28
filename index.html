@@ -9,7 +9,7 @@
     integrity="sha512-1zcA+Z02PvPbDjS2LApQwr5osGeLqE0P1Em/2pD2X+LgnBvDToH1cV2xAt64ldl/fBybYX3L0qZ2Xy8ZwKBB9A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>  
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body class="bg-gray-900 text-white font-sans">
@@ -34,7 +34,7 @@
       <a href="#story" class="hover:text-yellow-400">Our Story</a>
       <a href="feedback.html" class="hover:text-yellow-400">Feedback</a>
     </nav>
-    <div class="text-xl font-bold tracking-wide" style="color: #6B4849C7">SAVOR</div>
+    <div class="text-xl font-bold tracking-wide" style="color: #6B4849C7"><a href="#">SAVOR</a></div>
     <div class="text-sm">Theme</div>
   </header>
 
@@ -43,165 +43,172 @@
   <main>
 
     <!-- Hero Section -->
-    <section id="hero" class="relative bg-cover bg-center h-[400px]" style="background-image: url('Assets/show2.jpg');">
-      <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col items-start justify-end px-10 pb-10">
-        <button
-          class="bg-red-600 text-white px-6 py-3 rounded-full font-semibold text-2xl mb-2 hover:bg-red-700 transition font-[Lobster]"
-          style="font-family: 'Lobster', cursive;">Eat Now</button>
-        <h1 class="text-5xl font-bold text-white">at SAVOR</h1>
+    <section id="hero" class="relative bg-cover bg-center h-[600px]" style="background-image: url('Assets/show2.jpg');">
+      <div class="relative w-full h-[600px]">
+        <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col items-start justify-end px-10 pb-10 z-10">
+          <button
+            class="bg-red-600 text-white px-6 py-3 rounded-full font-semibold text-2xl mb-2 hover:bg-red-700 transition font-[Lobster]"
+            style="font-family: 'Lobster', cursive;">Eat Now</button>
+          <h1 class="text-5xl font-bold text-white">at SAVOR</h1>
+        </div>
+        <div class="slideshow relative w-full h-full">
+          <img src="Assets/show.jpg"
+            class="absolute inset-0 w-full h-full object-cover slide opacity-100 transition-opacity duration-1000" />
+          <img src="Assets/show2.jpg"
+            class="absolute inset-0 w-full h-full object-cover slide opacity-0 transition-opacity duration-1000" />
+          <img src="Assets/show3.jpg"
+            class="absolute inset-0 w-full h-full object-cover slide opacity-0 transition-opacity duration-1000" />
+        </div>
       </div>
       <div class="absolute bottom-4 w-full flex justify-center space-x-2">
         <div class="w-2 h-2 bg-white rounded-full"></div>
         <div class="w-2 h-2 bg-gray-500 rounded-full"></div>
         <div class="w-2 h-2 bg-gray-500 rounded-full"></div>
-      </div> 
+      </div>
     </section>
-<section id="chat-section"
-    class="fixed top-10 right-6 max-w-sm w-[90%] sm:w-96 bg-[#d6d6c9] rounded-2xl p-4 shadow-xl flex flex-col space-y-4 z-40
+    <section id="chat-section" class="fixed top-10 right-6 max-w-sm w-[90%] sm:w-96 bg-[#d6d6c9] rounded-2xl p-4 shadow-xl flex flex-col space-y-4 z-40
            transition-all duration-300 opacity-0 scale-95 pointer-events-none translate-y-4">
-    
-    <!-- Header -->
-    <div class="flex justify-between items-center">
-      <div class="text-lg text-gray-700 cursor-pointer">&#8592;</div>
-      <h1 class="text-2xl font-bold"><span class="text-black">Food</span><span class="text-[#9AAD7B]">ie</span></h1>
-    </div>
 
-    <!-- Title -->
-    <div class="text-center">
-      <h2 class="text-[17px] font-semibold">How can we <span class="text-[#9AAD7B]">assist</span> you today?</h2>
-      <p class="text-[12px] text-gray-600">Talk to Foodie AI about our services, origin, food and so much more.</p>
-    </div>
-
-    <!-- Chat box -->
-    <div class="bg-white h-[200px] rounded-md shadow-inner"></div>
-
-    <!-- Option cards -->
-    <div class="flex justify-between gap-2 text-center">
-      <div class="bg-white flex-1 p-2 rounded-md shadow text-xs cursor-pointer hover:bg-gray-100 transition">
-        <h3 class="font-semibold text-[13px] mb-1">Contact Us</h3>
-        <p class="text-gray-600 text-[11px]">Ask anything about our restaurant.</p>
+      <!-- Header -->
+      <div class="flex justify-between items-center">
+        <div class="text-lg text-gray-700 cursor-pointer"><a href="index.html">&#8592;</a></div>
+        <h1 class="text-2xl font-bold"><span class="text-black">Food</span><span class="text-[#9AAD7B]">ie</span></h1>
       </div>
-      <div class="bg-white flex-1 p-2 rounded-md shadow text-xs cursor-pointer hover:bg-gray-100 transition">
-        <h3 class="font-semibold text-[13px] mb-1">Food Offered</h3>
-        <p class="text-gray-600 text-[11px]">Explore our food menu.</p>
-      </div>
-      <div class="bg-white flex-1 p-2 rounded-md shadow text-xs cursor-pointer hover:bg-gray-100 transition">
-        <h3 class="font-semibold text-[13px] mb-1">General Support</h3>
-        <p class="text-gray-600 text-[11px]">Need help? We’re here!</p>
-      </div>
-    </div>
 
-    <!-- Input -->
-    <div class="flex items-center bg-white rounded-full px-4 py-2 shadow">
-      <input type="text" placeholder="Type your prompt here..."
-             class="flex-1 bg-transparent text-sm placeholder-gray-400 focus:outline-none" />
-      <div class="bg-[#9AAD7B] text-white p-2 rounded-full ml-2 cursor-pointer hover:bg-[#8fa46f] transition">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none"
-             viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M9 5l7 7-7 7" />
-        </svg>
+      <!-- Title -->
+      <div class="text-center">
+        <h2 class="text-[17px] font-semibold">How can we <span class="text-[#9AAD7B]">assist</span> you today?</h2>
+        <p class="text-[12px] text-gray-600">Talk to Foodie AI about our services, origin, food and so much more.</p>
       </div>
-    </div>
-  </section>
 
-  <!-- FLOATING TOGGLE ICON -->
-  <div id="chat-toggle"
-    class="fixed right-4 top-1/2 -translate-y-1/2 z-50 w-14 h-14 rounded-full bg-[#9AAD7B] shadow-lg cursor-pointer
+      <!-- Chat box -->
+      <div class="bg-white h-[200px] rounded-md shadow-inner"></div>
+
+      <!-- Option cards -->
+      <div class="flex justify-between gap-2 text-center">
+        <div class="bg-white flex-1 p-2 rounded-md shadow text-xs cursor-pointer hover:bg-gray-100 transition">
+          <h3 class="font-semibold text-[13px] mb-1">Contact Us</h3>
+          <p class="text-gray-600 text-[11px]">Ask anything about our restaurant.</p>
+        </div>
+        <div class="bg-white flex-1 p-2 rounded-md shadow text-xs cursor-pointer hover:bg-gray-100 transition">
+          <h3 class="font-semibold text-[13px] mb-1">Food Offered</h3>
+          <p class="text-gray-600 text-[11px]">Explore our food menu.</p>
+        </div>
+        <div class="bg-white flex-1 p-2 rounded-md shadow text-xs cursor-pointer hover:bg-gray-100 transition">
+          <h3 class="font-semibold text-[13px] mb-1">General Support</h3>
+          <p class="text-gray-600 text-[11px]">Need help? We’re here!</p>
+        </div>
+      </div>
+
+      <!-- Input -->
+      <div class="flex items-center bg-white rounded-full px-4 py-2 shadow">
+        <input type="text" id="userInput" name="userInput" placeholder="Type your prompt here..."
+          class="flex-1 bg-transparent text-black text-sm placeholder-gray-400 focus:outline-none" />
+        <div class="bg-[#9AAD7B] text-white p-2 rounded-full ml-2 cursor-pointer hover:bg-[#8fa46f] transition">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- FLOATING TOGGLE ICON -->
+    <div id="chat-toggle" class="fixed right-4 top-1/2 -translate-y-1/2 z-50 w-14 h-14 rounded-full bg-[#9AAD7B] shadow-lg cursor-pointer
            flex items-center justify-center hover:scale-105 transition">
-    <img src="assets/img/bot-message-square.svg" alt="Chatbot" class="w-7 h-7" />
-  </div> 
+      <img src="assets/img/bot-message-square.svg" alt="Chatbot" class="w-7 h-7" />
+    </div>
     <!-- Our Story Section -->
 
-    <section id="our-story"  class="px-6 py-14 bg-gray-800">
+    <section id="our-story" class="px-6 py-14 bg-gray-800">
 
-    <section id="story" class="px-6 py-14 bg-gray-800">
+      <section id="story" class="px-6 py-14 bg-gray-800">
 
-      <h2 class="text-center text-3xl font-semibold mb-8">Our Story</h2>
-      <div class="flex flex-col md:flex-row items-center justify-center gap-8 max-w-4xl mx-auto">
-        <img src="Assets/man.jpg" alt="Our Team" class="w-60 rounded-lg shadow-lg">
-        <div class="text-2xl text-gray-300 leading-relaxed text-center max-w-xl">
-          <p class="mb-6">
-            Savor started as a simple dream—to serve <br>comforting food with a gourmet touch. Today,<br>
-            it’s a place where vibrant chefs, warm service,<br>
-            and welcoming spaces bring people together,<br>
-            one plate at a time.
-          </p>
-          <div class="mt-4 flex gap-6 text-xl font-semibold text-white justify-center">
-            <span>Delicious</span>
-            <span>•</span>
-            <span>Nourishing</span>
-            <span>•</span>
-            <span>Gourmet</span>
+        <h2 class="text-center text-3xl font-semibold mb-8">Our Story</h2>
+        <div class="flex flex-col md:flex-row items-center justify-center gap-8 max-w-4xl mx-auto">
+          <img src="Assets/man.jpg" alt="Our Team" class="w-60 rounded-lg shadow-lg">
+          <div class="text-2xl text-gray-300 leading-relaxed text-center max-w-xl">
+            <p class="mb-6">
+              Savor started as a simple dream—to serve <br>comforting food with a gourmet touch. Today,<br>
+              it’s a place where vibrant chefs, warm service,<br>
+              and welcoming spaces bring people together,<br>
+              one plate at a time.
+            </p>
+            <div class="mt-4 flex gap-6 text-xl font-semibold text-white justify-center">
+              <span>Delicious</span>
+              <span>•</span>
+              <span>Nourishing</span>
+              <span>•</span>
+              <span>Gourmet</span>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Signature Dishes Section -->
-    <section id="main-dishes" class="bg-gray-600 py-14 px-6">
-      <h2 class="text-center text-4xl font-semibold text-yellow-300 mb-10" style="font-family: 'Lobster', cursive;">Our
-        Signature Dishes</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 max-w-6xl mx-auto text-center">
-        <div>
-          <img src="Assets/1.jpg" alt="Teff-Crusted Chicken" class="w-60 rounded-lg shadow-lg mb-2 mx-auto">
-          <h3 class="font-semibold">Teff-Crusted Chicken Strips with Awaze Aioli</h3>
-          <p class="text-sm text-gray-600">1700 ETB</p>
+      <!-- Signature Dishes Section -->
+      <section id="main-dishes" class="bg-gray-600 py-14 px-6">
+        <h2 class="text-center text-4xl font-semibold text-yellow-300 mb-10" style="font-family: 'Lobster', cursive;">
+          Our
+          Signature Dishes</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 max-w-6xl mx-auto text-center">
+          <div>
+            <img src="Assets/1.jpg" alt="Teff-Crusted Chicken" class="w-60 rounded-lg shadow-lg mb-2 mx-auto">
+            <h3 class="font-semibold">Teff-Crusted Chicken Strips with Awaze Aioli</h3>
+            <p class="text-sm text-gray-600">1700 ETB</p>
+          </div>
+          <div>
+            <img src="Assets/2.jpg" alt="Spinach Macaroni" class="w-60 rounded-lg shadow-lg mb-2 mx-auto">
+            <h3 class="font-semibold">Creamy Spinach Macaroni Bowl</h3>
+            <p class="text-sm text-gray-600">1500 ETB</p>
+          </div>
+          <div>
+            <img src="Assets/3.jpg" alt="Combo Bowl" class="w-60 rounded-lg shadow-lg mb-2 mx-auto">
+            <h3 class="font-semibold">Combo Bowl</h3>
+            <p class="text-sm text-gray-600">2000 ETB</p>
+          </div>
+          <div>
+            <img src="Assets/4.jpg" alt="Spaghetti Gomen" class="w-60 rounded-lg shadow-lg mb-2 mx-auto">
+            <h3 class="font-semibold">Spaghetti Gomen Pesto</h3>
+            <p class="text-sm text-gray-600">1300 ETB</p>
+          </div>
+          <div>
+            <img src="Assets/5.jpg" alt="Lamb Skewers" class="w-60 rounded-lg shadow-lg mb-2 mx-auto">
+            <h3 class="font-semibold">Honey-Balsamic Glazed Lamb Skewers</h3>
+            <p class="text-sm text-gray-600">2400 ETB</p>
+          </div>
+          <div>
+            <img src="Assets/6.jpg" alt="Spinach Mac & Cheese" class="w-60 rounded-lg shadow-lg mb-2 mx-auto">
+            <h3 class="font-semibold">Spinach Mac & Cheese Bake</h3>
+            <p class="text-sm text-gray-600">1800 ETB</p>
+          </div>
+          <div>
+            <img src="Assets/7.jpg" alt="Veggie Flatbread" class="w-60 rounded-lg shadow-lg mb-2 mx-auto">
+            <h3 class="font-semibold">Fire-Roasted Veggie Flatbread</h3>
+            <p class="text-sm text-gray-600">2000 ETB</p>
+          </div>
+          <div>
+            <img src="Assets/8.jpg" alt="Tuna Chickpea Bowl" class="w-60 rounded-lg shadow-lg mb-2 mx-auto">
+            <h3 class="font-semibold">Tuna & Chickpea Bowl</h3>
+            <p class="text-sm text-gray-600">2100 ETB</p>
+          </div>
+          <div>
+            <img src="Assets/9.jpg" alt="Combo 2" class="w-60 rounded-lg shadow-lg mb-2 mx-auto">
+            <h3 class="font-semibold">Combo 2</h3>
+            <p class="text-sm text-gray-600">3000 ETB</p>
+          </div>
         </div>
-        <div>
-          <img src="Assets/2.jpg" alt="Spinach Macaroni" class="w-60 rounded-lg shadow-lg mb-2 mx-auto">
-          <h3 class="font-semibold">Creamy Spinach Macaroni Bowl</h3>
-          <p class="text-sm text-gray-600">1500 ETB</p>
-        </div>
-        <div>
-          <img src="Assets/3.jpg" alt="Combo Bowl" class="w-60 rounded-lg shadow-lg mb-2 mx-auto">
-          <h3 class="font-semibold">Combo Bowl</h3>
-          <p class="text-sm text-gray-600">2000 ETB</p>
-        </div>
-        <div>
-          <img src="Assets/4.jpg" alt="Spaghetti Gomen" class="w-60 rounded-lg shadow-lg mb-2 mx-auto">
-          <h3 class="font-semibold">Spaghetti Gomen Pesto</h3>
-          <p class="text-sm text-gray-600">1300 ETB</p>
-        </div>
-        <div>
-          <img src="Assets/5.jpg" alt="Lamb Skewers" class="w-60 rounded-lg shadow-lg mb-2 mx-auto">
-          <h3 class="font-semibold">Honey-Balsamic Glazed Lamb Skewers</h3>
-          <p class="text-sm text-gray-600">2400 ETB</p>
-        </div>
-        <div>
-          <img src="Assets/6.jpg" alt="Spinach Mac & Cheese" class="w-60 rounded-lg shadow-lg mb-2 mx-auto">
-          <h3 class="font-semibold">Spinach Mac & Cheese Bake</h3>
-          <p class="text-sm text-gray-600">1800 ETB</p>
-        </div>
-        <div>
-          <img src="Assets/7.jpg" alt="Veggie Flatbread" class="w-60 rounded-lg shadow-lg mb-2 mx-auto">
-          <h3 class="font-semibold">Fire-Roasted Veggie Flatbread</h3>
-          <p class="text-sm text-gray-600">2000 ETB</p>
-        </div>
-        <div>
-          <img src="Assets/8.jpg" alt="Tuna Chickpea Bowl" class="w-60 rounded-lg shadow-lg mb-2 mx-auto">
-          <h3 class="font-semibold">Tuna & Chickpea Bowl</h3>
-          <p class="text-sm text-gray-600">2100 ETB</p>
-        </div>
-        <div>
-          <img src="Assets/9.jpg" alt="Combo 2" class="w-60 rounded-lg shadow-lg mb-2 mx-auto">
-          <h3 class="font-semibold">Combo 2</h3>
-          <p class="text-sm text-gray-600">3000 ETB</p>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Reserve Section -->
-    <section class="bg-gray-700 py-12 text-left pl-10">
-      <h2 class="text-3xl font-semibold text-white-300 italic">Want to reserve a spot?</h2>
-      <p class="text-2xl font-bold mt-2 text-white italic">Call us +251 9000000</p>
-    </section>
+      <!-- Reserve Section -->
+      <section class="bg-gray-700 py-12 text-left pl-10">
+        <h2 class="text-3xl font-semibold text-white-300 italic">Want to reserve a spot?</h2>
+        <p class="text-2xl font-bold mt-2 text-white italic">Call us +251 9000000</p>
+      </section>
 
-    <section class="bg-gray-800 py-10 px-6">
-      <div class="max-w-6xl mx-auto">
-        <img src="Assets/reserve.jpg" alt="Restaurant Collage" class="rounded-lg shadow-md w-full">
-      </div>
-    </section>
+      <section class="bg-gray-800 py-10 px-6">
+        <div class="max-w-6xl mx-auto">
+          <img src="Assets/reserve.jpg" alt="Restaurant Collage" class="rounded-lg shadow-md w-full">
+        </div>
+      </section>
   </main>
 
   <footer class="bg-grey-100 text-white py-10 px-6">
@@ -232,7 +239,8 @@
       </div>
     </div>
   </footer>
-<script src="chat-toggle.js"></script>
+  <script src="chat-toggle.js"></script>
+  <script src="index.js"></script>
 </body>
 
 </html>
