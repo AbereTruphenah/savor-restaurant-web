@@ -40,4 +40,12 @@ document.addEventListener("DOMContentLoaded", () => {
     // Scroll to latest message
     chatWindow.scrollTop = chatWindow.scrollHeight;
   });
+
+    // Also send message on pressing Enter
+    input.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") {
+        e.preventDefault();
+        sendBtn.click(); // trigger the button click handler
+    }
+    });
 });
