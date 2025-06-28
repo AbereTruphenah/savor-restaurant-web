@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SAVOR Menu</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+
+  <!-- Header -->
+  
+<header class="fixed top-0 left-0 w-full bg-white shadow z-50">
+    <nav class="container mx-auto px-6 py-4">
+      <div class="flex items-center justify-between">
+
+        <!-- Left: Desktop Navigation -->
+        <div class="flex-1 hidden md:flex items-center space-x-8">
+          <!-- Menu Dropdown -->
+          <div class="relative group">
+            <button class="nav-link flex items-center">
+              Menu <span class="ml-1 text-black">▼</span>
+            </button>
+            <div class="group-hover:block hidden absolute bg-white shadow mt-2 w-48 z-40">
+              <a href="#breakfast" class="block px-4 py-3 hover:bg-gray-100">Breakfast</a>
+              <a href="#main-dishes" class="block px-4 py-3 hover:bg-gray-100">Main Dishes</a>
+              <a href="#desserts" class="block px-4 py-3 hover:bg-gray-100">Desserts</a>
+              <a href="#drinks" class="block px-4 py-3 hover:bg-gray-100">Drinks</a>
+            </div>
+          </div>
+          <a href="#story" class="nav-link">Our Story</a>
+          <a href="#feedback" class="nav-link">Feedback</a>
+        </div>
+
+        <!-- Center: Brand -->
+        <div class="flex-1 text-center">
+          <h1 class="text-2xl font-display font-bold">SAVOR</h1>
+        </div>
+
+        <div class="flex flex-1 justify-end items-center space-x-4">
+          <button id="themeToggle">Theme</button>
+          <!-- Mobile Menu Button -->
+          <button id="mobileMenuBtn" class="md:hidden p-2">
+            <div class="w-6 h-6 flex flex-col justify-center space-y-1">
+              <div class="w-full h-0.5 bg-black"></div>
+              <div class="w-full h-0.5 bg-black"></div>
+              <div class="w-full h-0.5 bg-black"></div>
+            </div>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Dropdown Menu -->
+      <div id="mobileMenu" class="md:hidden hidden mt-4 pb-4">
+        <a href="#menu" class="block py-2">Menu</a>
+        <a href="#story" class="block py-2">Our Story</a>
+        <a href="#feedback" class="block py-2">Feedback</a>
+      </div>
+    </nav>
+  </header>
+
+    <!-- Breakfast -->
+    <section id="breakfast">
+      <div class="flex items-center justify-center gap-4 my-6">
+      <hr class="flex-grow border-t border-gray-500" />
+      <h2 class="text-2xl md:text-3xl font-bold italic text-gray-800 whitespace-nowrap">Breakfast</h2>
+      <hr class="flex-grow border-t border-gray-500" />
+      </div>
+
+      <div class="grid grid-cols-2 gap-4 md:gap-6">
+
+        <div class="bg-white rounded-lg shadow overflow-hidden text-sm">
+          <img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0" class="w-full h-80 object-cover" />
+          <div class="p-3">
+            <h4 class="font-bold">Egg Whites & Veggies</h4>
+            <p>Fluffy egg whites and roasted vegetables.</p>
+            <div class="flex flex-wrap gap-1 mt-1 text-xs">
+              <span class="bg-green-100 px-2 py-1 rounded-full">🌿 Gluten-free</span>
+              <span class="bg-yellow-100 px-2 py-1 rounded-full">🟡 Vegan</span>
+            </div>
+            <div class="text-right font-bold mt-2">1200 birr</div>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow overflow-hidden text-sm">
+          <img src="assets/img/pexels-nicola-barts-7936735.jpg" class="w-full h-80 object-cover" />
+          <div class="p-3">
+            <h4 class="font-bold">Avocado Toast</h4>
+            <p>Garlic toast, avocado, poached egg.</p>
+            <div class="flex flex-wrap gap-1 mt-1 text-xs">
+              <span class="bg-yellow-100 px-2 py-1 rounded-full">🟡 Vegan opt</span>
+              <span class="bg-red-100 px-2 py-1 rounded-full">⚠️ May contain dairy</span>
+            </div>
+            <div class="text-right font-bold mt-2">1000 birr</div>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow overflow-hidden text-sm">
+          <img src="assets/img/pexels-polina-tankilevitch-4109503.jpg" class="w-full h-80 object-cover" />
+          <div class="p-3">
+            <h4 class="font-bold">Brioche Toast w/ Jam</h4>
+            <p>Classic toast with jam & butter.</p>
+            <div class="flex flex-wrap gap-1 mt-1 text-xs">
+              <span class="bg-green-100 px-2 py-1 rounded-full">🌿 Vegetarian</span>
+              <span class="bg-red-100 px-2 py-1 rounded-full">⚠️ Gluten</span>
+            </div>
+            <div class="text-right font-bold mt-2">850 birr</div>
+          </div>
+        </div>
+
+        
+        <div class="bg-white rounded-lg shadow overflow-hidden text-sm">
+          <img src="assets/img/pexels-valeriya-1147840.jpg" class="w-full h-80 object-cover" />
+          <div class="p-3">
+            <h4 class="font-bold">Cinnamon Brioche French Toast</h4>
+            <p>Brioche with cinnamon & berries.</p>
+            <div class="flex flex-wrap gap-1 mt-1 text-xs">
+              <span class="bg-green-100 px-2 py-1 rounded-full">🌿 Vegetarian</span>
+              <span class="bg-red-100 px-2 py-1 rounded-full">⚠️ Dairy</span>
+            </div>
+            <div class="text-right font-bold mt-2">950 birr</div>
+          </div>
+        </div>
+
+      </div>
+    </section id="main-dishes">
+
+    <!-- Section: Main Dishes -->
+    <section>
+      <div class="flex items-center justify-center gap-4 my-6">
+      <hr class="flex-grow border-t border-gray-500" />
+      <h2 class="text-2xl md:text-3xl font-bold italic text-gray-800 whitespace-nowrap">Main Dishes</h2>
+      <hr class="flex-grow border-t border-gray-500" />
+      </div>
+
+      <div class="grid grid-cols-2 gap-4 md:gap-6">
+
+        
+        <div class="bg-white rounded-lg shadow overflow-hidden text-sm">
+          <img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0" class="w-full h-80 object-cover" />
+          <div class="p-3">
+            <h4 class="font-bold">Pepper Steak with Mushroom Sauce</h4>
+            <p>Juicy grilled steak finished with a creamy mushroom-pepper sauce, served with sautéed vegetables on the side</p>
+            <div class="flex flex-wrap gap-1 mt-1 text-xs">
+              <span class="bg-green-100 px-2 py-1 rounded-full">🌿 Gluten-free</span>
+              <span class="bg-yellow-100 px-2 py-1 rounded-full">🟡 Vegan</span>
+            </div>
+            <div class="text-right font-bold mt-2">1150 birr</div>
+          </div>
+        </div>
+
+        <!-- Avocado Toast -->
+        <div class="bg-white rounded-lg shadow overflow-hidden text-sm">
+          <img src="assets/img/pexels-enginakyurt-2456435.jpg" class="w-full h-80 object-cover" />
+          <div class="p-3">
+            <h4 class="font-bold">Grilled Vegetable & Pasta Bowl</h4>
+            <p>A colorful bowl of egg-free pasta tossed with grilled vegetables and tomato herb sauce. Light, savory, and satisfying.<p>
+            <div class="flex flex-wrap gap-1 mt-1 text-xs">
+              <span class="bg-yellow-100 px-2 py-1 rounded-full">🟡 Vegan opt</span>
+              <span class="bg-red-100 px-2 py-1 rounded-full">⚠️ May contain dairy</span>
+            </div>
+            <div class="text-right font-bold mt-2">1000 birr</div>
+          </div>
+        </div>
+
+        <!-- Brioche -->
+        <div class="bg-white rounded-lg shadow overflow-hidden text-sm">
+          <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb" class="w-full h-80 object-cover" />
+          <div class="p-3">
+            <h4 class="font-bold">Grilled Chicken Plate</h4>
+            <p>Tender grilled chicken breast served with your choice of two sauces and a seasonal vegetable side.</p>
+            <div class="flex flex-wrap gap-1 mt-1 text-xs">
+              <span class="bg-green-100 px-2 py-1 rounded-full">🌿 Vegetarian</span>
+              <span class="bg-red-100 px-2 py-1 rounded-full">⚠️ Gluten</span>
+            </div>
+            <div class="text-right font-bold mt-2">2000 birr</div>
+          </div>
+        </div>
+
+        <!-- Cinnamon Toast -->
+        <div class="bg-white rounded-lg shadow overflow-hidden text-sm">
+          <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587" class="w-full h-80 object-cover" />
+          <div class="p-3">
+            <h4 class="font-bold">Avocado & Chickpea Sandwich</h4>
+            <p>Creamy chickpeas and avocado layered with crisp veggies on toasted vegan bread. Fresh, filling, and fully plant-based.</p>
+            <div class="flex flex-wrap gap-1 mt-1 text-xs">
+              <span class="bg-green-100 px-2 py-1 rounded-full">🌿 Vegetarian</span>
+              <span class="bg-red-100 px-2 py-1 rounded-full">⚠️ Dairy</span>
+            </div>
+            <div class="text-right font-bold mt-2">950 birr</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- Section: Desserts -->
+    <section id="desserts">
+      <div class="flex items-center justify-center gap-4 my-6">
+      <hr class="flex-grow border-t border-gray-500" />
+      <h2 class="text-2xl md:text-3xl font-bold italic text-gray-800 whitespace-nowrap">Desserts</h2>
+      <hr class="flex-grow border-t border-gray-500" />
+      </div>
+
+      <div class="grid grid-cols-2 gap-4 md:gap-6">
+
+       
+        <div class="bg-white rounded-lg shadow overflow-hidden text-sm">
+          <img src="assets/img/pexels-melaudelo-32640499.jpg" class="w-full h-80 object-cover" />
+          <div class="p-3">
+            <h3 class="text-center font-semibold text-sm">Carrot Cake - 360 ETB</h3>
+            <p class="text-xs text-gray-600 text-center">Full size: 600 ETB</p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow overflow-hidden text-sm">
+          <img src="assets/img/pexels-gulsum-coban-844585548-32708968.jpg" class="w-full h-80 object-cover" />
+          <div class="p-3">
+            <h3 class="font-semibold text-sm text-center">Croissant Cake - 345 ETB</h3>
+            <p class="text-xs text-gray-600 text-center">Full size: 530 ETB</p> 
+          </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow overflow-hidden text-sm">
+          <img src="assets/img/pexels-marta-dzedyshko-1042863-2067396.jpg" class="w-full h-80 object-cover" />
+          <div class="p-3">
+            <h3 class="font-semibold text-sm text-center">Chocolate Cake - 390 ETB</h3>
+            <p class="text-xs text-gray-600 text-center">Includes Chocolate Bites</p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow overflow-hidden text-sm">
+          <img src="assets/img/pexels-silviopelegrin-32706254.jpg" class="w-full h-80 object-cover" />
+          <div class="p-3">
+            <h3 class="font-semibold text-center text-sm">Macarons - 300 ETB</h3>
+            <p class="text-xs text-gray-600 text-center">10 pack / 6 pack</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- Section: Drinks -->
+    <section id="Drinks">
+      <div class="flex items-center justify-center gap-4 my-6">
+      <hr class="flex-grow border-t border-gray-500" />
+      <h2 class="text-2xl md:text-3xl font-bold italic text-gray-800 whitespace-nowrap">Drinks</h2>
+      <hr class="flex-grow border-t border-gray-500" />
+      </div>
+
+      <div class="grid grid-cols-2 gap-4 md:gap-6">
+        <div class="bg-white rounded-lg shadow overflow-hidden text-sm">
+          <img src="assets/img/pexels-craytive-1545529.jpg" class="w-full h-80 object-cover" />
+          <div class="p-3">
+            <h3 class="font-semibold text-center text-sm">Red House Wine</h3>
+            <p class="text-xs text-center text-gray-600">390 ETB/glass</p>
+          </div>
+        </div>
+
+  
+        <div class="bg-white rounded-lg shadow overflow-hidden text-sm">
+          <img src="assets/img/pexels-timur-weber-8679375.jpg" class="w-full h-80 object-cover" />
+          <div class="p-3">
+            <h3 class="font-semibold text-center text-sm">Citrus Vodka Spritz</h3>
+            <p class="text-xs text-center text-gray-600 ">300 ETB/glass</p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow overflow-hidden text-sm">
+          <img src="assets/img/pexels-jdgromov-8375042.jpg" class="w-full h-80 object-cover" />
+          <div class="p-3">
+            <h3 class="font-semibold text-sm text-center">Pine Mango Ginger Juice</h3>
+            <p class="text-xs text-gray-600 text-center">160 ETB/glass</p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow overflow-hidden text-sm">
+          <img src="assets/img/pexels-nguy-n-ti-n-th-nh-2150376175-32566389.jpg" class="w-full h-80 object-cover" />
+          <div class="p-3">
+            <h3 class="font-semibold text-sm text-center">Iced Hibiscus Tea (Pomegranate)</h3>
+            <p class="text-xs text-center text-gray-600">140 ETB/glass</p>
+          </div>
+
+      </div>
+    </section>  
+
+<!--chatbot section -->
+  <section id="chat-section"
+    class="fixed bottom-24 right-6 max-w-sm w-[90%] sm:w-96 bg-[#d6d6c9] rounded-2xl p-4 shadow-xl flex flex-col space-y-4 z-40
+           transition-all duration-300 opacity-0 scale-95 pointer-events-none translate-y-4">
+    
+    <!-- Header -->
+    <div class="flex justify-between items-center">
+      <div class="text-lg text-gray-700 cursor-pointer">&#8592;</div>
+      <h1 class="text-2xl font-bold"><span class="text-black">Food</span><span class="text-[#9AAD7B]">ie</span></h1>
+    </div>
+
+    <!-- Title -->
+    <div class="text-center">
+      <h2 class="text-[17px] font-semibold">How can we <span class="text-[#9AAD7B]">assist</span> you today?</h2>
+      <p class="text-[12px] text-gray-600">Talk to Foodie AI about our services, origin, food and so much more.</p>
+    </div>
+
+    <!-- Chat box -->
+    <div class="bg-white h-[200px] rounded-md shadow-inner"></div>
+
+    <!-- Option cards -->
+    <div class="flex justify-between gap-2 text-center">
+      <div class="bg-white flex-1 p-2 rounded-md shadow text-xs cursor-pointer hover:bg-gray-100 transition">
+        <h3 class="font-semibold text-[13px] mb-1">Contact Us</h3>
+        <p class="text-gray-600 text-[11px]">Ask anything about our restaurant.</p>
+      </div>
+      <div class="bg-white flex-1 p-2 rounded-md shadow text-xs cursor-pointer hover:bg-gray-100 transition">
+        <h3 class="font-semibold text-[13px] mb-1">Food Offered</h3>
+        <p class="text-gray-600 text-[11px]">Explore our food menu.</p>
+      </div>
+      <div class="bg-white flex-1 p-2 rounded-md shadow text-xs cursor-pointer hover:bg-gray-100 transition">
+        <h3 class="font-semibold text-[13px] mb-1">General Support</h3>
+        <p class="text-gray-600 text-[11px]">Need help? We’re here!</p>
+      </div>
+    </div>
+
+    <!-- Input -->
+    <div class="flex items-center bg-white rounded-full px-4 py-2 shadow">
+      <input type="text" placeholder="Type your prompt here..."
+             class="flex-1 bg-transparent text-sm placeholder-gray-400 focus:outline-none" />
+      <div class="bg-[#9AAD7B] text-white p-2 rounded-full ml-2 cursor-pointer hover:bg-[#8fa46f] transition">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none"
+             viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M9 5l7 7-7 7" />
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- FLOATING TOGGLE ICON -->
+  <div id="chat-toggle"
+    class="fixed right-4 top-1/2 -translate-y-1/2 z-50 w-14 h-14 rounded-full bg-[#9AAD7B] shadow-lg cursor-pointer
+           flex items-center justify-center hover:scale-105 transition">
+    <img src="assets/img/bot-message-square.svg" alt="Chatbot" class="w-7 h-7" />
+  </div> 
+
+<footer class="bg-[#B6B7A5] text-gray-900 py-10 px-6 mt-0">
+  <div class="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 items-start text-sm">
+
+    <!-- Left Column -->
+    <div class="space-y-3">
+      <div class="flex gap-4">
+        <a href="#" class="hover:underline">Menu</a>
+        <a href="#" class="hover:underline">Our Story</a>
+        <a href="#" class="hover:underline">Feedback</a>
+      </div>
+      <div>
+        <p class="font-semibold">Opening Hours</p>
+        <p>Monday – Sunday</p>
+        <p>7 am – 11 pm</p>
+      </div>
+    </div>
+
+    <!-- Center Column -->
+    <div class="text-center space-y-4">
+      <h2 class="text-xl font-bold font-serif">Savor</h2>
+      <div class="flex justify-center gap-4 text-2xl">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+
+    <!-- Right Column -->
+    <div class="space-y-3">
+      <div>
+        <p class="font-semibold">Location</p>
+        <p>Bole Atlas – Behind 2000</p>
+        <p>Habesha</p>
+      </div>
+      <!-- Embedded responsive map -->
+      <div class="w-full h-40">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3939.642552241464!2d38.776579074913486!3d8.999540790372763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b853d3e5c8803%3A0x5df1fc9eb7ad4d98!2s2000%20Habesha%20Cultural%20Restaurant!5e0!3m2!1sen!2set!4v1719497706840!5m2!1sen!2set" 
+          width="100%" 
+          height="100%" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade"
+          class="rounded-md shadow-md">
+        </iframe>
+      </div>
+    </div>
+
+  </div>
+</footer>
+ <script src="chat-toggle.js"></script>
+</body>
+</html>
